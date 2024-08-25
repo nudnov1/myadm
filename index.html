@@ -30,6 +30,24 @@
         .button:hover {
             background-color: #17C7F8; /* Darker green on hover */
         }
+                /* Flexbox container to ensure equal height */
+                .w3-row-padding {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .w3-third, .w3-twothird {
+            display: flex;
+            flex-direction: column;
+        }
+        .w3-third {
+            flex: 1; /* Makes sure the left panel takes up 1/3 of the space */
+        }
+        .w3-twothird {
+            flex: 2; /* Makes sure the right panel takes up 2/3 of the space */
+        }
+        .w3-card-4 {
+            flex-grow: 1; /* Makes the card grow to fill the remaining space */
+        }
     </style>
 </head>
 <body class="w3-light-grey">
